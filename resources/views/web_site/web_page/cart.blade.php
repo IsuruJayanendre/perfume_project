@@ -41,7 +41,7 @@
         <tfoot>
             <tr class="font-semibold text-gray-900 bg-gray-300">
                 <th scope="row" class="px-7 py-3 text-base">Total</th>
-                <td class="px-6 py-3">3</td>
+                <td class="px-6 py-3"></td>
                 <td class="px-6 py-3">21,000</td>
                 <td class="px-6 py-3">Checkout</td>
             </tr>

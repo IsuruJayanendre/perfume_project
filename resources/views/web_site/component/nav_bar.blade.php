@@ -39,15 +39,16 @@
         <a href="#" class="text-gray-800 hover:text-blue-600 active:text-blue-800 focus:text-blue-800 underline-offset-4 hover:underline">About</a>
         <a href="#" class="text-gray-800 hover:text-blue-600 active:text-blue-800 focus:text-blue-800 underline-offset-4 hover:underline">Contact</a>
         
-        <!--cart-->
+        
+        
+        @if (Route::has('login'))
+          @auth
+          <!--cart-->
         <a href="{{route('cart.view')}}" class="text-gray-800 hover:text-blue-600 active:text-blue-800 focus:text-blue-800 underline-offset-4 hover:underline">My cart <i class="fa-solid fa-cart-shopping"></i></a>
         
         <!--whislist-->
         <a href="#" class="text-gray-800 hover:text-blue-600 active:text-blue-800 focus:text-blue-800 underline-offset-4 hover:underline">Whislist <i class="fa-solid fa-heart"></i></a>
         
-        
-        @if (Route::has('login'))
-          @auth
             <a href="{{ url('/dashboard') }}" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600">
               Dashboard
             </a>
